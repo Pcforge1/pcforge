@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PCForge — Build Your PC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PC<span>Forge</span></div>
+    <div class="tag">You pick it. We build it.</div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">CUSTOM GAMING PCS</p>
+        <h1>Build your PC.<br><span>We do the hard part.</span></h1>
+        <p class="hero-copy">Choose your parts, see your total instantly, then pay securely. We assemble and test the system for you.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-title">Build service</div>
+        <div class="hero-price">$75</div>
+        <div class="muted">Assembly + testing</div>
+      </div>
+    </section>
+
+    <div id="notice" class="notice hidden"></div>
+
+    <section class="builder-layout">
+      <div class="parts-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">STEP 1</p>
+            <h2>Choose your parts</h2>
+          </div>
+          <div id="progress" class="progress">0 / 8 selected</div>
+        </div>
+        <div id="categories"></div>
+      </div>
+
+      <aside class="cart">
+        <div class="cart-sticky">
+          <p class="eyebrow">YOUR BUILD</p>
+          <h2>Build summary</h2>
+          <div id="summary" class="summary"></div>
+          <div class="line"><span>Parts</span><strong id="parts-total">$0.00</strong></div>
+          <div class="line"><span>Build + testing</span><strong>$75.00</strong></div>
+          <div class="total-line"><span>Total</span><strong id="grand-total">$75.00</strong></div>
+          <button id="checkout" class="checkout" disabled>Choose all parts</button>
+          <p class="secure">Secure checkout powered by Stripe.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>PCForge · Custom PC assembly & testing</footer>
+  <script src="app.js"></script>
+</body>
+</html>
